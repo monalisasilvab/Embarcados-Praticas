@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "certs.h": "c",
+        "string.h": "c"
+    }
+}
