@@ -1,0 +1,77 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ESP32 Build",
+			"type": "shell",
+			"command": "idf.py",
+			"args": [
+				"build"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "ESP32 Flash",
+			"type": "shell",
+			"command": "idf.py",
+			"args": [
+				"flash"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "ESP32 Monitor",
+			"type": "shell",
+			"command": "idf.py",
+			"args": [
+				"monitor"
+			],
+			"group": "test",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "ESP32 Build Flash Monitor",
+			"type": "shell",
+			"command": "idf.py",
+			"args": [
+				"build",
+				"flash",
+				"monitor"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [
+				"$gcc"
+			]
+		},
+		{
+			"label": "ESP32 Clean",
+			"type": "shell",
+			"command": "idf.py",
+			"args": [
+				"clean"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "ESP32 Menuconfig",
+			"type": "shell",
+			"command": "idf.py",
+			"args": [
+				"menuconfig"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
