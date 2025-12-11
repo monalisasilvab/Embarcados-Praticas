@@ -1,0 +1,33 @@
+# Build files
+build/
+sdkconfig.old
+*.pyc
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Certificados (IMPORTANTE: não commitar certificados privados!)
+main/certs/*.key
+main/certs/private*.pem
+
+# Logs
+*.log
+log/
+
+# Backups
+*.bak
+*.backup
+*_backup.c
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ESP-IDF
+dependencies.lock
+managed_components/
